@@ -31,6 +31,8 @@ int main()
         else
             beg = mid + 1;
         mid = beg + (end - beg) / 2;
+          //mid =  (end + beg) / 2;
+
     }
     if(*mid == sought)
         cout<<"the index of "<<sought<<" is "<<int(mid - ivec.cbegin())<<".(begin as 0)"<<endl;

@@ -1,20 +1,19 @@
 /*************************************************************************
-	> File Name: random.cpp
+	> File Name: 3_34.cpp
 	> Author: 
 	> Mail: 
-	> Created Time: Sun 09 Apr 2017 11:19:19 PM CST
+	> Created Time: Wed 12 Apr 2017 08:53:24 PM CST
  ************************************************************************/
 
 #include<iostream>
-#include<random>
 using namespace std;
 int main()
 {
-
-  random_device rd;
-  for(int n=0; n<10; ++n)
-    cout << rd() % 100 << " ";
-    cout<<endl;
-  return 0;
+    int arr[10] = {1,2,3,4,5,6};
+    int *p1 = &arr[3];
+    int *p2 = &arr[3];
+    p1 =p1 + (p2 - p1);
+    cout<<*p1<<endl;
+    return 0;
 }
 
