@@ -1,21 +1,20 @@
 /*************************************************************************
-	> File Name: p98.cpp
+	> File Name: 3_41.cpp
 	> Author: 
 	> Mail: 
-	> Created Time: Sun 09 Apr 2017 06:52:21 PM CST
+	> Created Time: Thu 13 Apr 2017 08:48:04 PM CST
  ************************************************************************/
 
 #include<iostream>
-#include<string>
 #include<vector>
 using namespace std;
 int main()
 {
-    vector<string> vstr = {"i","","you","forever","!"};
-    for(auto it = vstr.cbegin();
-       it != vstr.cend());
-       ++it)
-    cout<<*it<<"";
+    int array[10] = {1,2,3,4,5,6,7,8,9,10};
+    vector<int> ivec(begin(array),end(array));
+    for(auto i : ivec)
+        cout<<i<<" ";
     cout<<endl;
     return 0;
 }
+
