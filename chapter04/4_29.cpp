@@ -1,21 +1,18 @@
 /*************************************************************************
-	> File Name: 4_13.cpp
+	> File Name: 4_29.cpp
 	> Author: 
 	> Mail: 
-	> Created Time: 2017年04月25日 星期二 15时33分32秒
+	> Created Time: 2017年05月13日 星期六 14时28分48秒
  ************************************************************************/
 
 #include<iostream>
 using namespace std;
 int main()
 {
-    int i;
-    double d;
-    d = i = 3.5;
-    cout<<"d = "<<d<<"; i = "<<i<<endl;
-    i = d = 3.5;
-    cout<<"d = "<<d<<"; i = "<<i<<endl;
+    int x[10];
+    int *p = x;
+    cout<<sizeof(x) / sizeof(*x)<<endl;
+    cout<<sizeof(p) / sizeof(*p)<<endl;
     return 0;
-
 }
 
