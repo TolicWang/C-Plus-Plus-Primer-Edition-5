@@ -1,2 +1,4 @@
 #!/bin/bash
-g++ --std=c++0x $1
+path=`pwd`
+g++ --std=c++0x $1 &&
+$path/a.out
