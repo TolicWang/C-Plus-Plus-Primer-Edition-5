@@ -7,18 +7,15 @@
 
 #include<iostream>
 using namespace std;
-//const string &shorterString(const string &s1,const string &s2)
-const string &test(const string &s2)
+const string &shorterString(string &s1, string &s2)
 {
-    //return s1.size() <= s2.size() ? s1 : s2;
-    cout<<&s2<<endl;
-    return s2;
+    return s1.size() <= s2.size() ? s1 : s2;
 }
 int main()
 {
-    string s1 = "hello",s2 = "girl",s3;
-    //s3 = shorterString(s1,s2);
-    s3 = test(s2);
+    string s1 = "hello",s2 = "girl";
+    const string &s3 = shorterString(s1,s2);
+    cout<<&s1<<endl;
     cout<<&s2<<endl;
     cout<<&s3<<endl;
     return 0;
