@@ -9,7 +9,7 @@
 #include"sale_data.h"
 #include<string>
 using namespace std;
-Sales_data& Sales_data::combine(const Sales_data& rhs)
+Sales_data& Sales_data::combine( const Sales_data& rhs)
 {
     if(isbn() == rhs.isbn())
     {
