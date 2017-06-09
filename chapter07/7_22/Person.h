@@ -24,6 +24,7 @@ public:
     Person(const std::string n):name(n),address("NULL"){}
     friend std::istream &read(std::istream&,Person &);
     friend std::ostream &print(std::ostream&,const Person&);
+    Person &test(const std::string t);
 };
 std::istream &read(std::istream&,Person &);
 std::ostream &print(std::ostream&,const Person&);

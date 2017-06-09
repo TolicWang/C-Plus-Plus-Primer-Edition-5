@@ -9,10 +9,11 @@
 #include"Person.h"
 int main()
 {
-    Person p1;
+    Person p1("zhang","Beijing");
     print(cout,p1)<<std::endl;
-    Person p2("zhang");
+    Person p2 = p1.test("test");
+    print(cout,p1)<<std::endl;
     print(cout,p2)<<std::endl;
-    Person p3("zhang","Beijing");
-    print(cout,p3)<<std::endl;
+    
+
 }

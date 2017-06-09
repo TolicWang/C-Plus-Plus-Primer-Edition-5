@@ -18,4 +18,8 @@ std::ostream &print(std::ostream &os,const Person &item)
     os<<item.getName()<<"   "<<item.getAddress();
     return os;
 }
-
+Person &Person::test(const std::string t)
+{
+    name += t;
+    return *this;
+}

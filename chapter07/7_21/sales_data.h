@@ -9,7 +9,7 @@ private:
     std::string bookNo;
     unsigned units_sold = 0;
     double revenue = 0.0;
-    double avg_price() const {return units_sold ? revenue/units_sold : 0;}
+    inline double avg_price() const {return units_sold ? revenue/units_sold : 0;}
 
 public:
     Sales_data():bookNo("NULL"){}
